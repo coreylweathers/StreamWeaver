@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "StreamProcessorFx": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7208",
+      "launchBrowser": false
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -9,9 +9,81 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D6CD941E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C459A650-5471-4B58-8F6E-204E47368722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireOrchestrator.AppHost", "src\AspireOrchestrator\AspireOrchestrator.AppHost\AspireOrchestrator.AppHost.csproj", "{03C6871B-D164-4B39-A0DF-83B75C002EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireOrchestrator.ServiceDefaults", "src\AspireOrchestrator\AspireOrchestrator.ServiceDefaults\AspireOrchestrator.ServiceDefaults.csproj", "{778418D0-373E-D0E1-8678-4EF09111074A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "src\web\web\web.csproj", "{0CEE8655-B93E-7C11-74B9-C6500F96D44C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.Client", "src\web\web.Client\web.Client.csproj", "{AB2F8015-08F3-008F-857D-6ACF06B68403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamProcessorFx", "src\StreamProcessorFx\StreamProcessorFx.csproj", "{6DBC7F89-3D67-5940-1C3D-790FC57866E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentGeneratorFx", "src\ContentGeneratorFx\ContentGeneratorFx.csproj", "{EC6A87D9-1483-1E91-CF5D-198D36756E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationFx", "src\NotificationFx\NotificationFx.csproj", "{D98C5C15-DD64-6D2A-832D-BF546FB3F84D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03C6871B-D164-4B39-A0DF-83B75C002EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C6871B-D164-4B39-A0DF-83B75C002EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C6871B-D164-4B39-A0DF-83B75C002EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C6871B-D164-4B39-A0DF-83B75C002EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778418D0-373E-D0E1-8678-4EF09111074A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778418D0-373E-D0E1-8678-4EF09111074A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778418D0-373E-D0E1-8678-4EF09111074A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778418D0-373E-D0E1-8678-4EF09111074A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEE8655-B93E-7C11-74B9-C6500F96D44C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEE8655-B93E-7C11-74B9-C6500F96D44C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEE8655-B93E-7C11-74B9-C6500F96D44C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEE8655-B93E-7C11-74B9-C6500F96D44C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB2F8015-08F3-008F-857D-6ACF06B68403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB2F8015-08F3-008F-857D-6ACF06B68403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB2F8015-08F3-008F-857D-6ACF06B68403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB2F8015-08F3-008F-857D-6ACF06B68403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DBC7F89-3D67-5940-1C3D-790FC57866E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBC7F89-3D67-5940-1C3D-790FC57866E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBC7F89-3D67-5940-1C3D-790FC57866E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBC7F89-3D67-5940-1C3D-790FC57866E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6A87D9-1483-1E91-CF5D-198D36756E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6A87D9-1483-1E91-CF5D-198D36756E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6A87D9-1483-1E91-CF5D-198D36756E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6A87D9-1483-1E91-CF5D-198D36756E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D98C5C15-DD64-6D2A-832D-BF546FB3F84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98C5C15-DD64-6D2A-832D-BF546FB3F84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98C5C15-DD64-6D2A-832D-BF546FB3F84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98C5C15-DD64-6D2A-832D-BF546FB3F84D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03C6871B-D164-4B39-A0DF-83B75C002EED} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{778418D0-373E-D0E1-8678-4EF09111074A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0CEE8655-B93E-7C11-74B9-C6500F96D44C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AB2F8015-08F3-008F-857D-6ACF06B68403} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6DBC7F89-3D67-5940-1C3D-790FC57866E1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E0E4EAEE-3F4C-4AF5-ABB3-59307760E95C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{EC6A87D9-1483-1E91-CF5D-198D36756E90} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D98C5C15-DD64-6D2A-832D-BF546FB3F84D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBBBC452-AE1A-4426-9038-83D00BE38A5A}
