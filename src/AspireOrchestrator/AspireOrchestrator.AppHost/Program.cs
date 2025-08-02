@@ -8,7 +8,7 @@ var storage = builder.AddAzureStorage("storage")
 var signalR = builder.AddAzureSignalR("signalr", AzureSignalRServiceMode.Serverless)
                      .RunAsEmulator();
 
-var streamProcessorQueue = storage.AddQueues("streamprocessor");
+var streamProcessorQueue = storage.AddQueues("streamprocessorqueues");
 
 builder.AddAzureFunctionsProject<Projects.StreamProcessorFx>("streamprocessorfx")
     .WithExternalHttpEndpoints()
@@ -27,6 +27,5 @@ builder.AddAzureFunctionsProject<Projects.NotificationFx>("notificationfx")
     .WithArgs("--host", "localhost", "--port", "7031");
 
 builder.AddProject<Projects.web>("web");
-
 
 builder.Build().Run();

@@ -22,7 +22,7 @@
     <ProjectReference Include="..\..\ContentGeneratorFx\ContentGeneratorFx.csproj" />
     <ProjectReference Include="..\..\NotificationFx\NotificationFx.csproj" />
     <ProjectReference Include="..\..\StreamProcessorFx\StreamProcessorFx.csproj" />
-    <ProjectReference Include="..\..\web\web\web.csproj" />
+    <ProjectReference Include="..\..\web\web.csproj" />
   </ItemGroup>
 
 </Project>
