@@ -36,7 +36,6 @@ public class Function1
         }
 
         var queueClient = new QueueClient(connectionString, "streamprocessor");
-
         await queueClient.CreateIfNotExistsAsync();
         await queueClient.SendMessageAsync(message);
 

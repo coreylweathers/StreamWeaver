@@ -13,15 +13,18 @@ var streamProcessorQueue = storage.AddQueues("streamprocessor");
 builder.AddAzureFunctionsProject<Projects.StreamProcessorFx>("streamprocessorfx")
     .WithExternalHttpEndpoints()
     .WithReference(streamProcessorQueue)
-    .WaitFor(streamProcessorQueue);
+    .WaitFor(streamProcessorQueue)
+    .WithArgs("--host", "localhost", "--port", "7208");
 
 builder.AddAzureFunctionsProject<Projects.ContentGeneratorFx>("contentgeneratorfx")
-    .WithExternalHttpEndpoints();
+    .WithExternalHttpEndpoints()
+    .WithArgs("--host", "localhost", "--port", "7110");
 
 builder.AddAzureFunctionsProject<Projects.NotificationFx>("notificationfx")
     .WithExternalHttpEndpoints()
     .WithReference(signalR)
-    .WaitFor(signalR);
+    .WaitFor(signalR)
+    .WithArgs("--host", "localhost", "--port", "7031");
 
 builder.AddProject<Projects.web>("web");
 
