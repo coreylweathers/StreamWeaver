@@ -361,3 +361,67 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# appsettings.json user secrets
+appsettings.json
+appsettings.*.json
+
+# Rider settings folder
+.idea/
+
+# Blazor WebAssembly specific
+**/wwwroot/service-worker*.js
+**/wwwroot/js/service-worker*.js
+**/wwwroot/appsettings.*.json
+**/wwwroot/service-worker-assets.js
+**/wwwroot/css/bootstrap/bootstrap.min.css.map
+
+# Avoid checking in published Blazor artifacts
+**/wwwroot/js/_framework
+**/wwwroot/_framework
+**/wwwroot/_content
+
+# Local SSL certificates 
+**/*.pfx
+**/*.key
+**/*.crt
+**/*.pem
+
+# Additional Blazor WebAssembly files
+**/.blazor.register
+**/BlazorDebugProxy/
+**/blazor-hotreload.sock
+
+# Visual Studio Code specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# User-specific browser settings
+**/Properties/launchSettings.json
+
+# Local development settings (keep examples)
+launchSettings.json
+*.Development.json
+!appsettings.json.example
+
+# Temporary browser files
+**/.aspnetcore-browser-tools/
+**/.browser-tools/
+
+# .NET Aspire artifacts
+**/.aspire/
+
+# Temp and cache files
+.tmp/
+.cache/
+
+# Detailed Rider settings (already have .idea/)
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/shelf/*
+**/.idea/dictionaries
+**/.idea/httpRequests/
